@@ -29,7 +29,7 @@
   },
   "scripts": {
     "start": "craco start; ./craco",
-    "build": "npm install -g craco@0.0.3; craco build; ./craco",
+    "build": "npm install -g craco@0.0.3; craco build;",
     "craco": ". ./craco"
   },
   "devDependencies": {
