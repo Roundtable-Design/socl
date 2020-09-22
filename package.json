@@ -28,8 +28,8 @@
     "xml-js": "^1.6.11"
   },
   "scripts": {
-    "start": "craco start; ./craco",
-    "build": "react-scripts build",
+    "start": "./craco start; ./craco",
+    "build": "./craco build; ./craco",
     "craco": ". ./craco"
   },
   "devDependencies": {
