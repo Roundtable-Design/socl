@@ -1,0 +1,42 @@
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+*::--webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+@font-face {
+  font-family: "neue";
+  src: url(neue.woff2) format("woff2");
+}
+
+html {
+  font-size: 18px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  hyphens: none; 
+  font-variant-ligatures: none;
+}
+
+p + p {
+  padding-top: 1rem;
+}
+
+p {
+  font-variant-numeric: oldstyle-nums;
+}
+
+body {
+  background: #efefef;
+}

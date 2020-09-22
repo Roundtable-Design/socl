@@ -1,0 +1,38 @@
+# node
+node_modules/
+package-lock.json
+
+# yarn
+.yarn/
+yarn.lock
+
+# git
+.git/
+
+# testing
+tests/
+notes/
+
+# production
+build/
+dist/
+src/models/
+src/data/
+.firebase/
+
+# tsg
+.tsgrc
+.graphqlconfig
+tsg-project.graphql
+
+# log files
+*.local
+*.log
+*.log*
+nohup.out
+
+# temporary
+.DS_Store
+.cache/
+*-old/
+*.tmp

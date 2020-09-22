@@ -1,0 +1,52 @@
+//Imports from package.json
+import styled from 'styled-components'
+
+
+//Styling for the table
+export const Table = styled.table`
+  font-family: ${props => props.theme.font.sans};
+  font-size: 0.6rem;
+  color: ${props => props.theme.color.standard};
+
+  /*border-top: 1.4px solid black;*/
+  border-bottom: 0.25px solid black;
+  min-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+`
+
+
+//Styling for the data in the table
+export const Data = styled.td`
+    border-top: 0.25px solid black;
+    border-collapse: collapse;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 500;
+    min-width: 10rem;
+    max-width: 10rem;
+    word-wrap: break-word;
+`
+
+
+//Styling for the table headings
+export const TH = styled.th`
+    border-top: 0.25px solid black;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: ${props => props.theme.color.standard};
+    font-size: 0.6rem;
+    font-family: ${props => props.theme.font.sans};
+    font-weight: 500;
+    line-height: 0.6rem;
+    text-align: left;
+    min-width: 10rem;
+    max-width: 10rem;
+`
+
+
+//Removing underline from the link
+export const A = styled.a`
+  text-decoration: none;
+  color: ${props => props.theme.color.standard};
+`
