@@ -36,3 +36,6 @@ nohup.out
 .cache/
 *-old/
 *.tmp
+
+# Local Netlify folder
+.netlify

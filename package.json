@@ -29,7 +29,7 @@
   },
   "scripts": {
     "start": "craco start; ./craco",
-    "build": "craco build; ./craco",
+    "build": "react-scripts build",
     "craco": ". ./craco"
   },
   "devDependencies": {
