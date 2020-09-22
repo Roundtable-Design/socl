@@ -22,6 +22,9 @@ export const NavLink = styled(Text.Sans)`
 `;
 
 export const NavWrapper = styled(Grid)`
+  /* position: absolute;
+  right: 30px;
+  top: 30px; */
   z-index: 10;
   padding-top: 1.4rem !important;
   padding-bottom: 5.5rem !important;
@@ -54,9 +57,10 @@ export const Logo = styled.a`
     ${({ large }) =>
       large
         ? `
-      width: 398px;
-      height: 238px;
-    ` : `
+      width: 303px;
+      height: 190px;
+    `
+        : `
       width: 146px;
       height: 98px;
     `}
@@ -70,16 +74,18 @@ export const Logo = styled.a`
 
 const ToggleWrapper = styled.span`
   min-width: 4rem;
-  grid-row-start: 1;
+  /* grid-row-start: 1;
   grid-column-start: 6;
   grid-column-end: 6;
 
-  ${breakpoint("md")`
+  ${breakpoint(
+    "md"
+  )`
     grid-column-start: 13;
     grid-column-end: 13;
     width: 1.4rem;
     height: 1.4rem
-  `};
+  `}; */
 
   cursor: pointer;
   display: inline-block;
@@ -284,9 +290,17 @@ export const LinkWrapper = styled.div`
 // Wrapper for the entire drop-down
 
 export const MenuWrapper = styled.div`
-  grid-row: 1 / 2;
+  /* grid-row: 1 / 2;
   grid-column-start: 5;
-  ${breakpoint("md")`grid-column-start: 12 `};
+  ${breakpoint(
+    "md"
+  )`grid-column-start: 12 `}; */
+
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  z-index: 100;
+
   align-items: right;
   justify-content: right;
 `;

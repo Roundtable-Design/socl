@@ -8,12 +8,13 @@ export default (props) => {
   const location = useLocation();
 
   return (
-    <NavWrapper>
-      <Logo href="/" className="nav-logo" large={location.pathname === "/"} />
-
+    <React.Fragment>
+      <NavWrapper>
+        <Logo href="/" className="nav-logo" large={location.pathname === "/"} />
+      </NavWrapper>
       <MenuWrapper>
         <MenuToggle className="nav-toggle" />
       </MenuWrapper>
-    </NavWrapper>
+    </React.Fragment>
   );
 };

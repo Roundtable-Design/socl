@@ -1,5 +1,5 @@
 //Imports from styles
-import { HeroLoop, HeroText, HeroTextWrapper, HeroWrapper } from "./styles";
+import { HeroLoop, HeroText, HeroWrapper } from "./styles";
 
 //Import from assets
 import Fog from "@video/fog.mp4";
@@ -14,14 +14,14 @@ export default (props) => (
         <source src={Fog} type="video/mp4" />
       </video>
     </HeroLoop>
-    <HeroTextWrapper>
-      <HeroText>
-        <div>This page was created to mimic the rhythm of the breath</div>
-        <div>
-          &ldquo;The Spirit of God has made me, and the breath of the Almighty
-          gives me life&rdquo;
-        </div>
-      </HeroText>
-    </HeroTextWrapper>
+    {/* <HeroTextWrapper> */}
+    <HeroText>
+      <div>This page was created to mimic the rhythm of the breath</div>
+      <div>
+        &ldquo;The Spirit of God has made me, and the breath of the Almighty
+        gives me life&rdquo;
+      </div>
+    </HeroText>
+    {/* </HeroTextWrapper> */}
   </HeroWrapper>
 );
