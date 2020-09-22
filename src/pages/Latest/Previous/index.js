@@ -3,15 +3,15 @@ import { CardFlex, CardHeading, CardMeta } from "../Card/styles";
 //Imports from Previous
 import { Item, Wrapper } from "./styles";
 
+import Podcasts from "@asset/icons/podcasts.png";
 //Imports from package.json
 import React from "react";
+import Spotify from "@asset/icons/spotify.jpg";
 //Imports from assets
 import insight from "@asset/icons/insight.png";
 import moment from "moment";
-import podcasts from "@asset/icons/podcasts.png";
 //Imports from helper
 import showDate from "@helper/showDate";
-import spotify from "@asset/icons/spotify.jpg";
 import styled from "styled-components";
 //Imports from theme
 import theme from "@/theme";
@@ -28,6 +28,7 @@ const Icon = styled.img`
     padding-top: 10px;
     padding-right: 5px;
     padding-left: 5px;
+    filter: grayscale(1);
     ${breakpoint("md")`
     padding-right: 5px;
     padding-left: 10px;
@@ -67,34 +68,30 @@ const SpanFlex = styled.span`
 //Creating a row of icons
 const Links = () => (
   <SpanFlex>
-    <Icon src={podcasts}></Icon>
-    <Icon src={spotify}></Icon>
+    <Icon src={Podcasts}></Icon>
+    <Icon src={Spotify}></Icon>
     {/* <Icon.Bowl src={insight}></Icon.Bowl> */}
   </SpanFlex>
 );
 
 //Previous section design
-export default ({ list }) => (
+export default ({ list, showPodcastLinks }) => (
   <Wrapper>
-    {list.map(
-      ({ author, date, link, name, title, purpose, showPodcastLinks }) => (
-        <Item>
-          <CardFlex>
-            <CardMeta>
-              {moment(date).format("DD MMMM YYYY")} &nbsp;&nbsp;&nbsp; {author}
-            </CardMeta>
-          </CardFlex>
-          <CardFlex>
-            <div style={{ "min-width": "90%" }}>
-              <CardHeading>{wordLimit(name || title, purpose)[0]}</CardHeading>
-              <CardHeading.italic
-                dangerouslySetInnerHTML={{ __html: purpose }}
-              />
-            </div>
-            {showPodcastLinks && <Links />}
-          </CardFlex>
-        </Item>
-      )
-    )}
+    {list.map(({ author, date, link, name, title, purpose }) => (
+      <Item>
+        <CardFlex>
+          <CardMeta>
+            {moment(date).format("DD MMMM YYYY")} &nbsp;&nbsp;&nbsp; {author}
+          </CardMeta>
+        </CardFlex>
+        <CardFlex>
+          <div style={{ "min-width": "90%" }}>
+            <CardHeading>{wordLimit(name || title, purpose)[0]}</CardHeading>
+            <CardHeading.italic dangerouslySetInnerHTML={{ __html: purpose }} />
+          </div>
+          {showPodcastLinks && <Links />}
+        </CardFlex>
+      </Item>
+    ))}
   </Wrapper>
 );

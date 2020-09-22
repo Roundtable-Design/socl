@@ -33,7 +33,7 @@ export default () => {
         date={episodes[0].date}
         title={episodes[0].name}
         slug={episodes[0].purpose}
-        page={"Latest episode"}
+        page={"Latest Episode"}
       />
 
       <PostWrapper>
