@@ -4,12 +4,16 @@ export const getXMLProperty = (itemProps, tagName, propName = "text") => {
   const item = itemProps.find(({ name }) => name === tagName);
 
   if (item.hasOwnProperty("elements")) return item.elements[0][propName];
-  else console.log(item);
-  return "null";
+
+  return null;
 };
 
 export const getXMLAttribute = (itemProps, tagName, attrName) => {
-  return itemProps.find(({ name }) => name === tagName).attributes[attrName];
+  const item = itemProps.find(({ name }) => name === tagName);
+
+  if (item) return item.attributes[attrName];
+
+  return null;
 };
 
 export const parseXML = (xml) => {
@@ -19,17 +23,19 @@ export const parseXML = (xml) => {
   const rss = elements.find(({ name }) => name === "rss");
   const channel = rss.elements.find(({ name }) => name === "channel");
 
-  //   console.log("channel", channel);
+  console.log("channel", channel);
 
   return channel.elements
     .filter(({ name }) => name === "item")
     .map(({ elements }) => elements)
     .map((props) => ({
-      image: getXMLAttribute(props, "media:content", "url"),
-      author: getXMLProperty(props, "itunes:author"),
+      image:
+        getXMLAttribute(props, "itunes:image", "href") ||
+        "https://images.unsplash.com/photo-1579802063117-87cd2ad50a88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80",
+      author: getXMLProperty(props, "itunes:author") || "Chris Whittington",
       date: getXMLProperty(props, "pubDate"),
-      name: getXMLProperty(props, "title"), // AGH!!
-      purpose: getXMLProperty(props, "description", "cdata"),
+      name: getXMLProperty(props, "title") || "Untitled episode", // AGH!!
+      purpose: getXMLProperty(props, "description", "cdata") || "",
     }));
 };
 
