@@ -8,6 +8,7 @@ import Previous from "./Latest/Previous";
 import React from "react";
 import Section from "@component/Section";
 import { fetchPodcastEpisodes } from "../scripts/podcast";
+import initGA from "../helpers/initGA";
 import styled from "styled-components";
 
 const Link = styled(Section.Link)``;
@@ -18,6 +19,8 @@ export default () => {
   const [episodes, setEpisodes] = React.useState();
 
   React.useEffect(() => {
+    initGA(window.location);
+
     (async function () {
       const episodes = await fetchPodcastEpisodes();
 

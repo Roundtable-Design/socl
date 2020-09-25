@@ -13,6 +13,7 @@ import React from "react";
 import Section from "@component/Section";
 //Import from helpers
 import access from "@helper/access";
+import initGA from "../../helpers/initGA";
 import insightData from "@helper/insightData";
 import parseEpisode from "@helper/parseEpisode";
 import parsePost from "@helper/parseData";
@@ -34,6 +35,8 @@ export default (props) => {
   /*Getting the data from prismic*/
   React.useEffect(
     function () {
+      initGA(window.location);
+
       if (props.type === "episodes") {
         insightData().then((items) => {
           setContent(items.result.map(parseEpisode));
