@@ -1,5 +1,5 @@
 //Imports from Card
-import { CardFlex, CardHeading, CardMeta } from "../Card/styles";
+import { A, CardFlex, CardHeading, CardMeta } from "../Card/styles";
 //Imports from Previous
 import { Item, Wrapper } from "./styles";
 
@@ -77,21 +77,31 @@ const Links = () => (
 //Previous section design
 export default ({ list, showPodcastLinks }) => (
   <Wrapper>
-    {list.map(({ author, date, link, name, title, purpose }) => (
-      <Item>
-        <CardFlex>
-          <CardMeta>
-            {moment(date).format("DD MMMM YYYY")} &nbsp;&nbsp;&nbsp; {author}
-          </CardMeta>
-        </CardFlex>
-        <CardFlex>
-          <div style={{ "min-width": "90%" }}>
-            <CardHeading>{wordLimit(name || title, purpose)[0]}</CardHeading>
-            <CardHeading.italic dangerouslySetInnerHTML={{ __html: purpose }} />
-          </div>
-          {showPodcastLinks && <Links />}
-        </CardFlex>
-      </Item>
-    ))}
+    {list.map(({ author, date, link, name, title, purpose }) => {
+      console.log({ link });
+
+      return (
+        <Item>
+          <CardFlex>
+            <CardMeta>
+              {moment(date).format("DD MMMM YYYY")} &nbsp;&nbsp;&nbsp; {author}
+            </CardMeta>
+          </CardFlex>
+          <CardFlex>
+            <div style={{ "min-width": "90%" }}>
+              <A href={link}>
+                <CardHeading>
+                  {wordLimit(name || title, purpose)[0]}
+                </CardHeading>
+                <CardHeading.italic
+                  dangerouslySetInnerHTML={{ __html: purpose }}
+                />
+              </A>
+            </div>
+            {showPodcastLinks && <Links />}
+          </CardFlex>
+        </Item>
+      );
+    })}
   </Wrapper>
 );
