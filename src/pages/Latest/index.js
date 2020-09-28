@@ -65,6 +65,7 @@ export default (props) => {
               title={content[0].name}
               slug={content[0].purpose}
               page={props.page}
+              link={content[0].link}
             />
             {/*The list of posts in the rest of the array*/}
             <PostWrapper>
