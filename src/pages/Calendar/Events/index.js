@@ -41,12 +41,19 @@ const EventTable = (props) => (
     <Heading>{props.name}</Heading>
     <Table cellPadding={0} cellSpacing={0}>
       {props.first && (
-        <tr>
-          <TH>Event title</TH>
-          <TH>Date</TH>
-          <TH>Ran by</TH>
-          <TH>Link to event</TH>
-        </tr>
+        <React.Fragment>
+          <tr>
+            <TH>Event title</TH>
+            <TH>Date</TH>
+            <TH>Ran by</TH>
+            <TH>Link to event</TH>
+          </tr>
+          <tr>
+            <TH colSpan="4">
+              <div style={{ opacity: 0, height: "18px" }} />
+            </TH>
+          </tr>
+        </React.Fragment>
       )}
 
       {Boolean(props.events) && Object.values(props.events).map(Row)}
@@ -67,7 +74,7 @@ const EventWrapper = styled.div`
   `}
 `;
 
-//Fuction that collects the data from prismic, sorts it into past and presentand then creates two tables for each using the formats above
+//Function that collects the data from prismic, sorts it into past and presentand then creates two tables for each using the formats above
 export default (props) => {
   //Gets the data from prismic
   const [allEvents, setAllEvents] = React.useState([]);
