@@ -22,9 +22,9 @@ export default () => {
     initGA(window.location);
 
     (async function () {
-      const episodes = await fetchPodcastEpisodes();
+      const jsonData = await fetchPodcastEpisodes();
 
-      setEpisodes(episodes);
+      setEpisodes(jsonData);
     })();
   }, []);
 
