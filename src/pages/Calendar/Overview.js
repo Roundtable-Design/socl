@@ -12,9 +12,7 @@ export default (props) => (
     />
     <Section.Body>
       <Section.Text>
-        <Section.Heading>
-          What do one of these events look like?
-        </Section.Heading>
+        <Section.Heading>Events</Section.Heading>
         <Section.Title></Section.Title>
         <p>
           The School for Contemplative Life offers events and programmes that
