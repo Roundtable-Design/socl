@@ -10,7 +10,7 @@ import React from "react";
 export default (props) => (
   <HeroWrapper>
     <HeroLoop>
-      <video autoPlay muted loop id="vanta">
+      <video autoPlay playsInline muted loop id="vanta">
         <source src={Fog} type="video/mp4" />
       </video>
     </HeroLoop>
