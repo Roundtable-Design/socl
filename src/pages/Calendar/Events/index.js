@@ -44,7 +44,7 @@ const EventTable = (props) => (
         <React.Fragment>
           <ColumnData bold>Event title</ColumnData>
           <ColumnData bold>Date</ColumnData>
-          <ColumnData bold>Ran by</ColumnData>
+          <ColumnData bold>Run by</ColumnData>
           <ColumnData bold>Link to event</ColumnData>
           <ColumnData spanAll>
             <div style={{ opacity: 0, height: "18px" }} />
