@@ -70,7 +70,7 @@ export default (props) => {
             {/*The list of posts in the rest of the array*/}
             <PostWrapper>
               <SectionHeading>{props.subheading}</SectionHeading>
-              <Posts postList={content.slice(0, LIMIT)} />
+              <Posts postList={content.slice(1, LIMIT)} />
             </PostWrapper>
 
             {/* verticle list of previous posts. */}
