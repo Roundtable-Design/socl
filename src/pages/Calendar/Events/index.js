@@ -1,5 +1,5 @@
 //Imports from Styles
-import { A, Data, TH, Table } from "./styles";
+import { A, ColumnData, Data, Grid } from "./styles";
 
 //Imports from package.json
 import React from "react";
@@ -24,40 +24,36 @@ const Heading = styled(Section.Heading)`
 `;
 
 //The format to store data in the row
-const Row = (value, index) => (
-  <tr key={index}>
-    <Data>{value.name}</Data>
-    <Data>{showDate(value.date)}</Data>
-    <Data>{value.author}</Data>
-    <Data>
+const Row = (value) => (
+  <React.Fragment>
+    <ColumnData>{value.name}</ColumnData>
+    <ColumnData>{showDate(value.date)}</ColumnData>
+    <ColumnData>{value.author}</ColumnData>
+    <ColumnData>
       <A href={value.link}>{getDomain(value.link)}</A>
-    </Data>
-  </tr>
+    </ColumnData>
+  </React.Fragment>
 );
 
 //The format of each table
 const EventTable = (props) => (
   <div>
     <Heading>{props.name}</Heading>
-    <Table cellPadding={0} cellSpacing={0}>
+    <Grid cellPadding={0} cellSpacing={0}>
       {props.first && (
         <React.Fragment>
-          <tr>
-            <TH>Event title</TH>
-            <TH>Date</TH>
-            <TH>Ran by</TH>
-            <TH>Link to event</TH>
-          </tr>
-          <tr>
-            <TH colSpan="4">
-              <div style={{ opacity: 0, height: "18px" }} />
-            </TH>
-          </tr>
+          <ColumnData bold>Event title</ColumnData>
+          <ColumnData bold>Date</ColumnData>
+          <ColumnData bold>Ran by</ColumnData>
+          <ColumnData bold>Link to event</ColumnData>
+          <ColumnData spanAll>
+            <div style={{ opacity: 0, height: "18px" }} />
+          </ColumnData>
         </React.Fragment>
       )}
 
       {Boolean(props.events) && Object.values(props.events).map(Row)}
-    </Table>
+    </Grid>
   </div>
 );
 
