@@ -1,5 +1,6 @@
 import Container from "./Container";
 import Footer from "./styles";
+import Instagram from "@icon/instagram.png";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import Medium from "@icon/medium.png";
 import Podcasts from "@icon/podcasts.png";
@@ -95,6 +96,9 @@ const Foot = (props) => (
           </a>
           <a href="https://twitter.com/SchoolofCLife">
             <Footer.Icon src={Twitter} />
+          </a>
+          <a href="https://instagram.com/SchoolofCLife">
+            <Footer.Icon src={Instagram} />
           </a>
         </p>
       </Footer.Socials>
