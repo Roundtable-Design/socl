@@ -35,13 +35,16 @@ export default ({ image, author, date, title, slug, page, link }) => {
         </A>
         {/*Icons to external websites*/}
         <ImageWrapper pageTitle={page}>
-          <a href="https://apps.apple.com/us/app/apple-podcasts/id525463029">
+          <a
+            target="_blank"
+            href="https://apps.apple.com/us/app/apple-podcasts/id525463029"
+          >
             <Image.Icon src={Podcasts} />
           </a>
-          {/* <a href="https://insighttimer.com/chriswhittington/guided-meditations/forming-a-new-relationship-with-uncertainty">
+          {/* <a target="_blank" href="https://insighttimer.com/chriswhittington/guided-meditations/forming-a-new-relationship-with-uncertainty">
           <Image.Bowl src={Insight}/>
         </a> */}
-          <a href="https://www.spotify.com/uk/">
+          <a target="_blank" href="https://www.spotify.com/uk/">
             <Image.Icon src={Spotify} />
           </a>
         </ImageWrapper>
