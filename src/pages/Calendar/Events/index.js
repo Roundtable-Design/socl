@@ -45,7 +45,7 @@ const EventTable = (props) => (
           <ColumnData bold>Event title</ColumnData>
           <ColumnData bold>Date</ColumnData>
           <ColumnData bold>Run by</ColumnData>
-          <ColumnData bold>Link to event</ColumnData>
+          <ColumnData bold>Link</ColumnData>
           <ColumnData spanAll>
             <div style={{ opacity: 0, height: "18px" }} />
           </ColumnData>
