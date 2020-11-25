@@ -39,13 +39,13 @@ export default ({ image, author, date, title, slug, page, link }) => {
             target="_blank"
             href="https://apps.apple.com/us/app/apple-podcasts/id525463029"
           > */}
-          <Image.Icon src={Podcasts} />
+          {/* <Image.Icon src={Podcasts} /> */}
           {/* </a> */}
           {/* <a target="_blank" href="https://insighttimer.com/chriswhittington/guided-meditations/forming-a-new-relationship-with-uncertainty">
           <Image.Bowl src={Insight}/>
         </a> */}
           {/* <a target="_blank" href="https://www.spotify.com/uk/"> */}
-          <Image.Icon src={Spotify} />
+          {/* <Image.Icon src={Spotify} /> */}
           {/* </a> */}
         </ImageWrapper>
       </TextWrapper>
