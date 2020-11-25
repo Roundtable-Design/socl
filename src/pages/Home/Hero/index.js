@@ -16,7 +16,7 @@ export default (props) => (
     </HeroLoop>
     {/* <HeroTextWrapper> */}
     <HeroText>
-      <div>This page was created to mimic the rhythm of the breath</div>
+      <div>This page was created to mirror the rhythm of the breath</div>
       <div>
         &ldquo;The Spirit of God has made me, and the breath of the Almighty
         gives me life&rdquo;
