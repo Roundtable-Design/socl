@@ -20,7 +20,7 @@ export default ({ image, author, date, title, slug, page, link }) => {
       <Image src={image} />
       {/*Text imported from prismic*/}
       <TextWrapper>
-        <A href={link}>
+        <A target="_blank" href={link}>
           {/* Work this magic for the "previous" elems */}
           <Heading v="sans" style={{ "padding-bottom": "0.5rem" }}>
             {page}

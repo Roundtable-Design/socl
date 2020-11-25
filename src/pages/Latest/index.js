@@ -37,14 +37,6 @@ export default (props) => {
     function () {
       initGA(window.location);
 
-      if (props.type === "episodes") {
-        insightData().then((items) => {
-          setContent(items.result.map(parseEpisode));
-        });
-
-        return;
-      }
-
       access(props.type).then((items) => {
         setContent(items.map(parsePost));
       });

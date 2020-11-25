@@ -36,6 +36,7 @@ export const parseXML = (xml) => {
       date: getXMLProperty(props, "pubDate"),
       name: getXMLProperty(props, "title") || "Untitled episode", // AGH!!
       purpose: getXMLProperty(props, "description", "cdata") || "",
+      link: getXMLProperty(props, "link") || "https://google.com",
     }));
 };
 
