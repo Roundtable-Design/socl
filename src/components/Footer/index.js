@@ -85,18 +85,18 @@ const Foot = (props) => (
           channels.
         </p>
         <p>
-          <a
+          {/* <a
             target="_blank"
             href="https://apps.apple.com/us/app/apple-podcasts/id525463029"
-          >
-            <Footer.Icon src={Podcasts} />
-          </a>
+          > */}
+          <Footer.Icon src={Podcasts} />
+          {/* </a> */}
           <a target="_blank" href="https://medium.com/@schoolofclife">
             <Footer.Icon src={Medium} />
           </a>
-          <a target="_blank" href="https://www.spotify.com/uk/">
-            <Footer.Icon src={Spotify} />
-          </a>
+          {/* <a target="_blank" href="https://www.spotify.com/uk/"> */}
+          <Footer.Icon src={Spotify} />
+          {/* </a> */}
           <a target="_blank" href="https://twitter.com/SchoolofCLife">
             <Footer.Icon src={Twitter} />
           </a>
