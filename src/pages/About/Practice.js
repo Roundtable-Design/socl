@@ -5,13 +5,11 @@ import Section from "@component/Section";
 
 // remove this when we get production photos.
 
-const mountain =
-  "https://images.unsplash.com/photo-1579802063117-87cd2ad50a88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80";
-
+const mountain = require("../../assets/images/jesus.png");
 //Crafting the section for about
 export default (props) => (
   <div>
-    <Section nopad="true">
+    <Section {...props} nopad="true" reverse>
       <Section.Image src={mountain} />
 
       <Section.Body>

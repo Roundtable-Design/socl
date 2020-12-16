@@ -118,7 +118,7 @@ export const CardHeading = styled(Text)`
 
 //Styling for the caption
 CardHeading.italic = styled(Text.Italic)`
-  display: inline;
+  display: block;
 
   color: ${(props) => props.theme.color.light};
   font-size: 24px;

@@ -98,7 +98,7 @@ export default ({ list, showPodcastLinks }) => (
                 />
               </A>
             </div>
-            {/* {showPodcastLinks && <Links />} */}
+            {showPodcastLinks && <Links />}
           </CardFlex>
         </Item>
       );

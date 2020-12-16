@@ -78,9 +78,7 @@ const ToggleWrapper = styled.span`
   grid-column-start: 6;
   grid-column-end: 6;
 
-  ${breakpoint(
-    "md"
-  )`
+  ${breakpoint("md")`
     grid-column-start: 13;
     grid-column-end: 13;
     width: 1.4rem;
@@ -292,9 +290,7 @@ export const LinkWrapper = styled.div`
 export const MenuWrapper = styled.div`
   /* grid-row: 1 / 2;
   grid-column-start: 5;
-  ${breakpoint(
-    "md"
-  )`grid-column-start: 12 `}; */
+  ${breakpoint("md")`grid-column-start: 12 `}; */
 
   position: absolute;
   right: 30px;
@@ -303,6 +299,7 @@ export const MenuWrapper = styled.div`
 
   align-items: right;
   justify-content: right;
+  grid-column: 1 / -1;
 `;
 
 // drop-down

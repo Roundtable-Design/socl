@@ -14,8 +14,6 @@ import Section from "@component/Section";
 //Import from helpers
 import access from "@helper/access";
 import initGA from "../../helpers/initGA";
-import insightData from "@helper/insightData";
-import parseEpisode from "@helper/parseEpisode";
 import parsePost from "@helper/parseData";
 import styled from "styled-components";
 

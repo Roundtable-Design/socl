@@ -23,9 +23,10 @@ export default (props) => {
         <A target="_blank" href={props.link}>
           <CardTop>
             <CardHeading>{props.title}</CardHeading>
-            <CardHeading.italic
-              dangerouslySetInnerHTML={{ __html: props.purpose }}
-            />
+            <CardHeading.italic>
+              {/* Remove tags */}
+              {props.purpose.replace(/<[^>]*>/g, "")}
+            </CardHeading.italic>
           </CardTop>
         </A>
         <A target="_blank" href={props.link} style={{ color: "black" }}>

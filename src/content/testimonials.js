@@ -19,6 +19,7 @@ export default [
       "This is largely due to the fact that it has never been presented to them through schools and parishes. The School will directly nourish and cultivate the depth-dimension of life through its well-thought out programme of retreats, guidance and other opportunities to assist the Christian community to the wellspring of silence and compassion flowing within.",
       'Quite simply, there is no other centre in this country dedicated to cultivating the human discovery of its groundless Ground, that eternal Mystery ever hidden with Christ in God."',
     ],
-    image: require("../assets/images/jesus.png"),
+    image:
+      "https://images.unsplash.com/photo-1579802063117-87cd2ad50a88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80",
   },
 ];

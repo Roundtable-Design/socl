@@ -37,7 +37,7 @@ export default () => {
         title={episodes[0].name}
         slug={episodes[0].purpose}
         link={episodes[0].link}
-        page={"Latest Episode"}
+        page="Latest Episode"
       />
 
       <PostWrapper>
@@ -54,15 +54,6 @@ export default () => {
       </PreviousWrapper>
     </Grid>
   ) : (
-    // <Panel />
     <ActivityIndicator />
   );
 };
-
-// <Latest
-//   type='episodes'
-//   title="Listen to our podcast at home or on the go."
-//   page="Latest Episode"
-//   subheading="Recent episodes"
-//   link='#'
-// />

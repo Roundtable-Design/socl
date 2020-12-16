@@ -57,7 +57,7 @@ Profile.picture = styled.div`
 const Quote = styled(Section)`
   ${breakpoint("md")`
     ${(props) =>
-      props.index % 2 &&
+      props.index === 0 &&
       css`
         grid-template-areas: "image image image image image image . body body body body ." !important;
       `}
@@ -69,13 +69,13 @@ const Quote = styled(Section)`
 export default (props) => (
   <div>
     {testimonials.map((current, index) => (
-      <Quote nopad="true" index={index}>
+      <Quote {...props} nopad="true" index={index}>
         <Image src={current.image} />
 
         <Section.Body>
           <Section.Text>
             <Section.Heading>
-              {!index && "Support for the School"}
+              {!index && "Support for the School of Contemplative Life"}
             </Section.Heading>
             <Section.Title></Section.Title>
             <Quote1>&quot;</Quote1>

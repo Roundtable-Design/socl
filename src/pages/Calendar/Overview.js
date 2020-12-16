@@ -15,11 +15,13 @@ export default (props) => (
         <Section.Heading>Events</Section.Heading>
         <Section.Title></Section.Title>
         <p>
-          The School for Contemplative Life offers events and programmes that
+          The School of Contemplative Life offers events and programmes that
           teach contemplative practice for compassionate living and social
           action. You can participate either by attending in-person events or
           online. Webcasts are available for some events which can be streamed
-          live and for a limited time following the event.
+          live and for a limited time following the event. If you would be
+          interested in learning more about us hosting an event for your group,
+          please get in touch.
         </p>
       </Section.Text>
 
