@@ -48,9 +48,9 @@ export default () => {
       <PreviousWrapper>
         <SectionHeading>Previous episodes</SectionHeading>
         <Previous showPodcastLinks list={episodes.slice(delimiter)} />
-        <Link to="https://socl.podbean.com/" nopad>
+        {/* <Link to="https://socl.podbean.com/" nopad>
           See more episodes
-        </Link>
+        </Link> */}
       </PreviousWrapper>
     </Grid>
   ) : (
