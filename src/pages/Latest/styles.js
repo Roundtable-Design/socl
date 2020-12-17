@@ -27,7 +27,7 @@ export const PostWrapper = styled.section`
 
   ${breakpoint("md")`
     grid-column-start: 2;
-    grid-column-end: 13;
+    grid-column-end: 12;
 `};
 `;
 

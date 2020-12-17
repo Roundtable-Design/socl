@@ -18,14 +18,14 @@ export default (props) => {
   console.log("link", props.link);
 
   return (
-    <Card>
+    <Card fluid={props.fluid}>
       <CardContent className="card-content">
         <A target="_blank" href={props.link}>
           <CardTop>
             <CardHeading>{props.title}</CardHeading>
             <CardHeading.italic>
               {/* Remove tags */}
-              {props.purpose.replace(/<[^>]*>/g, "")}
+              {props.purpose && props.purpose.replace(/<[^>]*>/g, "")}
             </CardHeading.italic>
           </CardTop>
         </A>

@@ -11,21 +11,31 @@ const breakpoint = theme.breakpoint;
 export const Card = styled.div`
   border-radius: 2px;
   border: 0px white solid;
+
+  ${({ fluid }) =>
+    !fluid &&
+    `
   width: 350px;
   min-width: 12.59rem;
-  transition: box-shadow .36s, border .36s;
-  }
+  `}
+
+  transition: box-shadow 0.36s, border 0.36s;
 `;
 
 //Image for the card
-export const CardImage = styled.img`
+export const CardImage = styled.div`
   display: none;
   ${breakpoint("md")`
+    background-image: url(${({ src }) => src});
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 65%;
+
     border-radius: 5px;
     object-fit: cover;
     filter: grayscale(0.44) contrast(0.8) brightness(1.2);
-    height: 225px;
-    overflow-y: hidden;
+    // height: 225px;
+    // overflow-y: hidden;
     display: block;
     width: 100%;
   `}
@@ -53,7 +63,7 @@ export const CardTop = styled.div`
 
 //Wrapper for card text
 export const CardContent = styled.div`
-  padding-left: 0.5rem;
+  /* padding-left: 0.5rem; */
 `;
 
 //Styling for the link
