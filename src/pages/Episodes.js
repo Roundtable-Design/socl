@@ -13,7 +13,7 @@ import styled from "styled-components";
 
 const Link = styled(Section.Link)``;
 
-const delimiter = 5;
+const delimiter = 4;
 
 export default () => {
   const [episodes, setEpisodes] = React.useState();
