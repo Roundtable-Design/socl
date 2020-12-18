@@ -1,7 +1,6 @@
-import styled from 'styled-components'
-import theme from '@/theme'
+import styled from "styled-components";
+import theme from "@/theme";
 const breakpoint = theme.breakpoint;
-
 
 export default styled.div`
   width: 100%;
@@ -9,8 +8,8 @@ export default styled.div`
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
 
-  ${breakpoint('md')`
+  ${breakpoint("md")`
     padding-top: 5.4rem;
     padding-bottom: 4rem
   `}
-`
+`;

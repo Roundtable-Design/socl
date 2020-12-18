@@ -48,8 +48,6 @@ const Section = styled(Grid)`
 //Wrapper for text
 Section.Body = styled.div`
   grid-area: body;
-  padding-bottom: 2.778rem;
-  ${breakpoint("md")`padding-bottom: unset`};
 `;
 
 //Image for section

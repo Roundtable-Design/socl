@@ -62,7 +62,7 @@ const Quote = styled(Section)`
         grid-template-areas: "image image image image image image . body body body body ." !important;
       `}
 
-    padding-top: ${(props) => props.index > 0 && "6rem"};
+    // padding-top: ${(props) => props.index > 0 && "6rem"};
   `}
 `;
 
