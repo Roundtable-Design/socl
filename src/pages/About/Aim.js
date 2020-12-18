@@ -23,7 +23,7 @@ export default (props) => (
     <Section {...props} nopad="true">
       <Section.Image src={require("../../assets/images/fern.jpg")} />
       <Section.Body>
-        <Section.Text>
+        <Section.Text style={{ marginBottom: "30px" }}>
           <Text.Italic style={{ marginBottom: "15px" }}>
             The School of Contemplative Life aims to:
           </Text.Italic>
