@@ -44,9 +44,9 @@ export default ({ image, author, date, title, slug, page, link }) => {
           {/* <a target="_blank" href="https://insighttimer.com/chriswhittington/guided-meditations/forming-a-new-relationship-with-uncertainty">
           <Image.Bowl src={Insight}/>
         </a> */}
-          <a target="_blank" href="https://www.spotify.com/uk/">
+          {/* <a target="_blank" href="https://www.spotify.com/uk/">
             <Image.Icon src={Spotify} />
-          </a>
+          </a> */}
         </ImageWrapper>
       </TextWrapper>
     </React.Fragment>

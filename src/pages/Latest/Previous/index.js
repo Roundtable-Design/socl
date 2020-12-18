@@ -69,7 +69,7 @@ const SpanFlex = styled.span`
 const Links = () => (
   <SpanFlex>
     {/* <Icon src={Podcasts}></Icon> */}
-    <Icon src={Spotify}></Icon>
+    {/* <Icon src={Spotify}></Icon> */}
     {/* <Icon.Bowl src={insight}></Icon.Bowl> */}
   </SpanFlex>
 );

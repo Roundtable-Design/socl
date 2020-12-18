@@ -94,9 +94,9 @@ const Foot = (props) => (
           <a target="_blank" href="https://medium.com/@schoolofclife">
             <Footer.Icon src={Medium} />
           </a>
-          <a target="_blank" href="https://www.spotify.com/uk/">
+          {/* <a target="_blank" href="https://www.spotify.com/uk/">
             <Footer.Icon src={Spotify} />
-          </a>
+          </a> */}
           <a target="_blank" href="https://twitter.com/SchoolofCLife">
             <Footer.Icon src={Twitter} />
           </a>
