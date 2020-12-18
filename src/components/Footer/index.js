@@ -85,12 +85,12 @@ const Foot = (props) => (
           channels.
         </p>
         <p>
-          <a
+          {/* <a
             target="_blank"
             href="https://apps.apple.com/us/app/apple-podcasts/id525463029"
           >
             <Footer.Icon src={Podcasts} />
-          </a>
+          </a> */}
           <a target="_blank" href="https://medium.com/@schoolofclife">
             <Footer.Icon src={Medium} />
           </a>

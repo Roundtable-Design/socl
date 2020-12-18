@@ -68,7 +68,7 @@ const SpanFlex = styled.span`
 //Creating a row of icons
 const Links = () => (
   <SpanFlex>
-    <Icon src={Podcasts}></Icon>
+    {/* <Icon src={Podcasts}></Icon> */}
     <Icon src={Spotify}></Icon>
     {/* <Icon.Bowl src={insight}></Icon.Bowl> */}
   </SpanFlex>
