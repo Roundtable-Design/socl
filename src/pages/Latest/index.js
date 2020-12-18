@@ -64,15 +64,17 @@ export default (props) => {
             </PostWrapper>
 
             {/* verticle list of previous posts. */}
-            <PreviousWrapper>
-              <SectionHeading>Previous {props.type}</SectionHeading>
-              <Previous list={content.slice(LIMIT)} />
-              {props.link && (
-                <Link to={props.link} nopad>
-                  See more {props.type}
-                </Link>
-              )}
-            </PreviousWrapper>
+            {content.length >= LIMIT && (
+              <PreviousWrapper>
+                <SectionHeading>Previous {props.type}</SectionHeading>
+                <Previous list={content.slice(LIMIT)} />
+                {props.link && (
+                  <Link to={props.link} nopad>
+                    See more {props.type}
+                  </Link>
+                )}
+              </PreviousWrapper>
+            )}
           </Grid>
         </Loader>
       ) : (
