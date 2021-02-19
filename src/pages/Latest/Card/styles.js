@@ -11,6 +11,9 @@ const breakpoint = theme.breakpoint;
 export const Card = styled.div`
   border-radius: 2px;
   border: 0px white solid;
+  margin-right: 18px;
+
+  ${breakpoint("md")`margin-right: 0;`}
 
   ${({ fluid }) =>
     !fluid &&

@@ -24,6 +24,7 @@ export const PostWrapper = styled.section`
   grid-column-start: 1;
   grid-column-end: 6;
   padding-bottom: 2.5rem;
+  /* margin-right: 18px; */
 
   ${breakpoint("md")`
     grid-column-start: 2;
