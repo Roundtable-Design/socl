@@ -42,11 +42,6 @@ export default (props) => {
         <Intro />
       </IntroWrap>
       <Practice marginBottom />
-      {/* <Message>
-        Contemplation is not about mastering techniques, it’s about
-        relationship. It’s the quiet, steady work of simply being here, fully
-        present to the gift of our life.
-      </Message> */}
       <Aims marginBottom />
       <Quotes marginBottom />
       <SignUp />

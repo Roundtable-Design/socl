@@ -60,11 +60,9 @@ const Row = styled.div`
 export default ({ postList }) => {
   return (
     <PostsWrapper>
-      {/* <Fader /> */}
       <PostsSection>
         <Row>
           {Object.values(postList).map((post, index) => (
-            // <PostContainer>
             <Card
               fluid
               title={wordLimit(post.name, post.purpose)[0]}
@@ -78,7 +76,6 @@ export default ({ postList }) => {
               src={post.image}
               link={post.link}
             />
-            // </PostContainer>
           ))}
         </Row>
       </PostsSection>
