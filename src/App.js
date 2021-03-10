@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import About from "@page/About";
 import Blog from "@page/Blog";
 import Calendar from "@page/Calendar";
+import CookieBanner from "./components/CookieBanner";
 import Episodes from "@page/Episodes";
 import Foot from "@component/Footer";
 import Guides from "@page/Guides";
@@ -24,6 +25,7 @@ const App = (props) => (
       <Loader>
         <Wrap>
           <Nav />
+          <CookieBanner />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
