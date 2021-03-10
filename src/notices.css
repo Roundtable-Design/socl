@@ -1,34 +1,34 @@
-body {
+.notices {
   font-family: garamond-premier-pro, serif;
-}
 
-h3 {
-  padding-top: 10px;
-  border-top: 1px solid #00000020;
-  margin-top: 60px;
-  margin-bottom: 15px;
-}
+  h3 {
+    padding-top: 10px;
+    border-top: 1px solid #00000020;
+    margin-top: 60px;
+    margin-bottom: 15px;
+  }
 
-ul,
-dl,
-p {
-  margin-bottom: 30px;
-}
+  ul,
+  dl,
+  p {
+    margin-bottom: 30px;
+  }
 
-p {
-  padding: 0 !important;
-}
+  p {
+    padding: 0 !important;
+  }
 
-ul,
-dd {
-  padding-left: 30px;
-}
+  ul,
+  dd {
+    padding-left: 30px;
+  }
 
-a {
-  color: #000000aa;
-  font-weight: bold;
-}
+  a {
+    color: #000000aa;
+    font-weight: bold;
+  }
 
-p:last-child {
-  margin-bottom: 60px;
+  p:last-child {
+    margin-bottom: 60px;
+  }
 }

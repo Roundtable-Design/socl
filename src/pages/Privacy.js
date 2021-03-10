@@ -3,7 +3,7 @@ import "../notices.css";
 import React from "react";
 
 export default () => (
-  <React.Fragment>
+  <section className="notices">
     <h1>Privacy Notice</h1>
     <h3>Introduction</h3>
     <p>
@@ -177,5 +177,5 @@ export default () => (
       complaint on the ICO’s website{" "}
       <a href="https://ico.org.uk/">ico.org.uk</a>
     </p>
-  </React.Fragment>
+  </section>
 );

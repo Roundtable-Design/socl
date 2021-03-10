@@ -3,7 +3,7 @@ import "../notices.css";
 import React from "react";
 
 export default () => (
-  <React.Fragment>
+  <section className="notices">
     <h1>Website Use Policy</h1>
     <h5>
       Please read these terms and conditions carefully before using the site
@@ -328,5 +328,5 @@ export default () => (
         info@schoolofcontemplativelife.com
       </a>
     </p>
-  </React.Fragment>
+  </section>
 );
