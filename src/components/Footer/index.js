@@ -58,6 +58,20 @@ const Foot = (props) => (
         <p>
           <Text.Italic>Social</Text.Italic> @schoolofclife
         </p>
+        <p>
+          <Text.Italic>
+            <a
+              style={{
+                color: "unset",
+                fontSize: "unset",
+                textDecoration: "unset",
+              }}
+              href="/terms-and-conditions"
+            >
+              Terms and Conditions
+            </a>
+          </Text.Italic>
+        </p>
       </Footer.Contact>
 
       <Footer.UpToDate>
