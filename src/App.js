@@ -25,7 +25,7 @@ const App = (props) => (
       <Loader>
         <Wrap>
           <Nav />
-          <CookieBanner />
+          {/* <CookieBanner /> */}
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
