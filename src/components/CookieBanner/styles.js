@@ -8,6 +8,7 @@ export const Outer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  z-index: 999999;
 `;
 
 export const Wrapper = styled.div`
