@@ -58,7 +58,7 @@ const Foot = (props) => (
         <p>
           <Text.Italic>Social</Text.Italic> @schoolofclife
         </p>
-        <p>
+        <p style={{ marginTop: "15px" }}>
           <Text.Italic>
             <a
               style={{
