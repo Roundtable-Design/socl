@@ -177,5 +177,18 @@ export default () => (
       complaint on the ICO’s website{" "}
       <a href="https://ico.org.uk/">ico.org.uk</a>
     </p>
+    <h3>Cookies</h3>
+    <p>
+      Necessary cookies enable core functionality such as security, network
+      management, accessibility, and also allow us to store your preferences for
+      cookies. You may disable these by changing your browser settings, but this
+      may affect how the website functions.
+    </p>
+    <p>
+      Google Analytics are also implemented onto this site. Using Google
+      Analytics allows us to collect <b>anonymous</b> information such as the
+      number of visitors to the site and the most popular pages. Allowing us to
+      do this helps us improve our website.
+    </p>
   </section>
 );

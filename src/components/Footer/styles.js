@@ -6,6 +6,7 @@ import Grid from "@component/Grid";
 import Text from "@component/Text";
 //import from theme
 import theme from "@/theme";
+
 const breakpoint = theme.breakpoint;
 
 // fade animations
