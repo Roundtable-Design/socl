@@ -55,7 +55,7 @@ export const HeroText = styled.p`
   box-sizing: border-box;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 15px;
+  bottom: 65px;
   font-size: 0.6rem;
   color: ${(props) => props.theme.color.forrest};
   /* height: fit-content; */
@@ -64,6 +64,7 @@ export const HeroText = styled.p`
   min-height: 6rem;
 
   ${breakpoint("md")`
+    bottom: 15px;
     font-size: 0.8rem;
   `}
 `;

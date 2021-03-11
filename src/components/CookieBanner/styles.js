@@ -12,7 +12,10 @@ export const Outer = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  zoom: 1.5;
+  zoom: 1.25;
+  ${theme.breakpoint("md")`
+    zoom: 1.5;
+  `}
 
   background: #f6f6f6;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
