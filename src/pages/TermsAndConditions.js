@@ -282,8 +282,6 @@ export default () => (
       </li>
       <li>
         Not to access without authority, interfere with, damage or disrupt:
-      </li>
-      <li>
         <ul>
           <li>any part of our site;</li>
           <li>any equipment or network on which our site is stored; </li>
