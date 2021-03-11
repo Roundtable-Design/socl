@@ -18,8 +18,8 @@ export default (props) => (
     <HeroText>
       <div>This page was created to mirror the rhythm of the breath</div>
       <div>
-        &ldquo;The Spirit of God has made me, and the breath of the Almighty
-        gives me life&rdquo;
+        &ldquo;The Spirit of God has made me, and the breath of the
+        Almighty&nbsp;gives&nbsp;me&nbsp;life&rdquo;
       </div>
     </HeroText>
     {/* </HeroTextWrapper> */}
