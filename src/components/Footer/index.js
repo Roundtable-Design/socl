@@ -68,7 +68,7 @@ const Foot = (props) => (
               }}
               href="/terms-and-conditions"
             >
-              Terms and Conditions
+              Website Use Terms and Conditions
             </a>
           </Text.Italic>
         </p>
