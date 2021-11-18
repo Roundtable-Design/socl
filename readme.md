@@ -11,7 +11,7 @@ This repository holds the source code for SCL's (website)(https://schoolofcontem
 2. `cd website`
 3. `npm run build`
 4. `npx serve -s build`
-```
+
 
 
 
