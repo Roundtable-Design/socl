@@ -3,6 +3,10 @@
 
 This repository holds the source code for SCL's (website)(https://schoolofcontemplativelife.com). We wrote it with React.
 
+### Podbean link-up
+- Podbean serves the podcast episodes for this website
+- It generates an RSS feed which is interpreted by a script at `/scripts/podcast.js`
+  - This script uses the NPM `xml-js` library to parse the RSS feed
 
 ### Hosting
 
